@@ -1,14 +1,14 @@
 using API.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
-var _config = builder.Configuration;
+var config = builder.Configuration;
 
 // Add services to the container.
 
-builder.Services.AddApplicationServices(_config);
+builder.Services.AddApplicationServices(config);
 builder.Services.AddControllers();
 builder.Services.AddCors();
-builder.Services.AddIdentityServices(_config);
+builder.Services.AddIdentityServices(config);
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
