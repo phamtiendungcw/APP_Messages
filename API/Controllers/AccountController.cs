@@ -16,8 +16,8 @@ namespace API.Controllers
 
         public AccountController(DataContext context, ITokenService tokenService)
         {
-            this._context = context;
-            this._tokenService = tokenService;
+            _context = context;
+            _tokenService = tokenService;
         }
 
         [HttpPost("Login")]

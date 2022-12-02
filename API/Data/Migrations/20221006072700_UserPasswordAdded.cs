@@ -4,10 +4,8 @@
 
 namespace API.Data.Migrations
 {
-    /// <inheritdoc />
     public partial class UserPasswordAdded : Migration
     {
-        /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AddColumn<byte[]>(
@@ -25,7 +23,6 @@ namespace API.Data.Migrations
                 defaultValue: new byte[0]);
         }
 
-        /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
